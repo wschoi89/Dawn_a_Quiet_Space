@@ -1,7 +1,6 @@
 import { CONFIG } from "site.config"
 import React from "react"
 import {
-  AiOutlineInstagram,
   AiOutlineGithub,
   AiOutlineMail,
   AiFillLinkedin,
@@ -21,16 +20,6 @@ const ContactCard: React.FC = () => {
           >
             <AiOutlineGithub className="icon" />
             <div className="name">github</div>
-          </a>
-        )}
-        {CONFIG.profile.instagram && (
-          <a
-            href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineInstagram className="icon" />
-            <div className="name">instagram</div>
           </a>
         )}
         {CONFIG.profile.email && (
